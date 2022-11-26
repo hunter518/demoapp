@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <h2>DEMO APP</h2>
+            </div>
+            <ul class="nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">JOBS</a></li>
+                <li><a href="#">CLIENTS</a></li>
+                <li><a href="profile.html">EMPLOYERS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="container1">
+            <div class="welcome-text">
+                <h1><i>i'am looking for..</i></h1>
+            </div>
+            <br>
+            <div class="search-bar">
+                <input type="text" placeholder="Enter a Job Discription " name="search">
+                <button><ion-icon name="search"></ion-icon>Search</button>
+            </div>
+           
+            <div class="checkbox">
+                <input type="checkbox">Full Time
+                <input type="checkbox">Part Time/casual/freelance
+                <select name="select your location">
+                    <option value="">Select your location</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Delhi</option>
+                    <option value="">Pune</option>
+                    <option value="">Rajasthan</option>
+                    <option value="">Gujarat</option>
+                    <option value="">Tamil Nadu</option>
+                    <option value="">Goa</option>
+                    <option value="">Kerala</option>
+                    <option value="">Jharkhand</option>
+                    <option value="">Bengaluru</option>
+                </select>
+            
+            
+                <div class="but">
+                    <span onclick="form()">REGISTER</span>
+                </div>
+            </div>
+        </div>    
+    </header>
+    <div class="register" id="register">
+        <div class="box">
+            <div class="top">
+                <h3>Register</h3>
+                <ion-icon name="close" onclick="cloSe()"></ion-icon>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <img src="images/user.png" alt="user profile image" width="150px" height="150px" id="profile">
+                    <input type="file" id="profile-photo"><label for="profile-photo">upload your photo</label>
+                    </div>
+                    <div class="right"> 
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="(541)754-3010">
+                        <div id="range">
+                            <span style="display: block;">Age</span><input type="range"
+                            id="rangeInput" name="rangeInput" min="20" max="60" value="20" oninput="amount.value=rangeInput.value"><output name="amount" id="amount" for="rangeInput">20</output>
+                        </div>
+                        <select name="#" id="State">
+                            <option value="#">State</option>
+                            <option value="Aasam">Aasam</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Odisa">Odisa</option>
+                            <option value="Goa">Goa</option>
+                        </select>
+                        <select name="#" id="Country">
+                            <option value="#">Country</option>
+                            <option value="India">India</option>
+                            <option value="Russia">Russia</option>
+                            <option value="China">China</option>
+                            <option value="Pakistan">Pakistan</option>
+                        </select>
+                        <input type="text" placeholder="Address">
+                        <input type="text" placeholder="Tags"><br>
+                        <input type="checkbox" name="" id="subscribe">Subscribe to newsletter
+                        <div class="buttons">
+                            <div class="cancel" onclick="cloSe()">Cancel</div>
+                            <div class="submit">Submit</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+         <script src="main.js">
+            
+         </script>
+
+</body>
+</html>

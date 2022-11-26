@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+    background:  url('images/background.jpg');
+    background-size: cover;
+    background-position: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+
+}
+.nav{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+
+}
+.nav li{
+    display: inline-block;
+    position: relative;
+    transition: 1s;
+}
+.nav li::after{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(4, 184, 255);
+}
+.nav li:hover:after{
+    width: 100%;
+}
+.nav li a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+
+}
+
+.nav li a :hover{
+    background:#fff;
+    color:#333;
+
+}
+.logo{
+width: 150px;
+text-align: center;
+float: left;
+height: auto;
+padding: 5px;
+margin-left: 40px;
+color: rgb(0, 0, 0);
+margin-top: 10px;
+background: white;
+z-index: 100;
+}
+.logo h2{
+    font-size: 1.2em;
+}
+.container1{
+   width: 80%;
+   height: 400px;
+   margin: auto auto;
+}
+.welcome-text{
+/* position: absolute;
+top:300px;
+bottom:250px; */
+
+line-height: 400px;
+text-decoration: none;
+color: white;
+clear: both;
+}
+.search-bar{ 
+margin-top: -180px;
+margin-bottom: 30px;
+}
+.search-bar input{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    
+}
+.search-bar input::placeholder{
+    font-style: italic;
+}
+.search-bar button{
+    display: inline-block;
+    padding: 7.5px 15px;
+    margin-left: 25px;
+    background: rgb(4, 184, 255);
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.search-bar button ion-icon{
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+.checkbox{
+color: #fff;
+}
+.checkbox input{
+    outline: none;
+    margin-right: 15px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.checkbox select{
+    width: 20%;
+    margin-left: 110px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.checkbox select option{
+    outline: none;
+    border: none;
+}
+.but{
+background: rgb(4, 184, 255);
+width: 120px;
+padding:10px 5px;
+text-align: center;
+margin: 50px auto;
+color: white;
+box-shadow: 0px 5px 0px rgb(1, 127, 177);
+}
+.but a{
+text-decoration: none;
+color: white;
+}
+.but:hover{
+cursor: pointer;
+transform: translate(2px, -2px);
+box-shadow: 1px 1px 5px grey;
+}
+.register{
+display: none;
+width: 100%;
+height: 100%;
+background: rgba(51, 51, 51, 0.25);
+position: absolute;
+top: 0;
+z-index: 2;
+}
+.register .box{
+position: relative;
+background: white;
+width: 50%;
+margin: auto auto;
+}
+.register .top{
+    background: rgb(4, 184, 255);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 20px;
+}
+.register .top ion-icon{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 1.2em;
+    color: white;
+}
+.register .top ion-icon:hover{
+    cursor: pointer;
+}
+.register .content{
+display: flex;
+text-align: center;
+}
+.register .content p{
+    color: rgb(4, 184, 255);
+}
+.register .content ion-icon{
+    font-size: 8em;
+    margin-top: 20px;
+    background-color: rgba(165, 165, 165, 0.611);
+}
+.register .left{
+width:50%
+}
+.register .content .left input{
+    display: none;
+}
+.register .content .left{
+    color: rgb(4, 184, 255);
+}
+.right{
+position: relative;
+}
+.register input{
+margin: 10px;
+padding: 10px;
+}
+.register input[placeholder='Email'], input[placeholder='Address'],input[placeholder='Tags']{
+width: 81%;
+}
+.register input[placeholder='(541)754-3010']{
+width: 81%;
+}
+.register input[placeholder='First Name']{
+width: 39.5%;
+}
+.register input[placeholder='Last Name']{
+width: 30%;
+}
+.register select{
+margin: 10px;
+padding: 10px;
+width: 86%;
+}
+.register span{
+display: block;
+margin: 10px;
+}
+.register .buttons{
+width: 100%;
+text-align: center;
+margin: 10px;
+margin-bottom: 20px;
+}
+.register .buttons .cancel, .submit{
+display: inline;
+margin: 10px;
+padding: 10px 20px;
+background:rgb(4, 184, 255) ;
+}
+.register .buttons .cancel{
+background: white;
+border: 1px solid grey;
+}
+.register .buttons .submit{
+color: white;
+}
+.register .buttons .submit:hover{
+    cursor: pointer;
+    transform: translate(2px, -2px);
+    box-shadow: 1px 1px 5px grey;
+}
+.register .buttons .cancel:hover{
+    cursor: pointer;
+    transform: translate(2px, -2px);
+    box-shadow: 1px 1px 5px grey;
+}
+#range{
+    margin:10px 20px;
+    display: flex;
+    align-items: center;
+}
+#range input{
+    width: 100%;
+}
