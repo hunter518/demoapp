@@ -121,11 +121,12 @@ color: #fff;
     border: none;
 }
 .checkbox select{
-    width: 25%;
-    margin-left: 110px;
+    width: 30%;
+    margin-left: 120px;
     padding: 10px;
     border: none;
     outline: none;
+    font-size:1.2em
 }
 .checkbox select option{
     outline: none;
