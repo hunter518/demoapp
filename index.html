@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        wrapper{
+            width: 1170px;
+            margin: auto;
+        }
+        body{
+            background:  url('images/background.jpg');
+            background-size: cover;
+            
+        }
+        header{
+            
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            height: 100vh;
+
+        }
+        .nav{
+            float: right;
+            list-style: none;
+            margin-top: 30px;
+
+        }
+        .nav li{
+            display: inline-block;
+        }
+        .nav li a{
+            color:blue;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+
+        }
+        
+        .nav li a :hover{
+            background:#fff;
+            color:#333;
+
+        }
+    .logo{
+        width: 150px;
+        text-align: center;
+        float: left;
+        height: auto;
+        margin-left: 40px;
+        color: rgb(0, 0, 0);
+        margin-top: 10px;
+        background: white;
+    }
+    .welcome-text{
+        position: absolute;
+        top:300px;
+        bottom:250px;
+        margin-left:120px;
+        text-decoration: none;
+        color: white;
+        
+        
+        text-align: center;
+        font: size 5px;
+    }
+    .search-bar{ 
+     position:absolute;
+     top:60%;
+     left:30%;
+    }
+    .button{
+       position:absolute;
+     top:60%;
+     left:50%;
+    }
+    .checkbox{
+        position:absolute;
+     top:70%;
+     left:30%;
+    }
+    .but{
+        background: skyblue;
+        width: 120px;
+        padding: 5px;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .but:hover{
+        cursor: pointer;
+        transform: translate(2px, -2px);
+        box-shadow: 1px 1px 5px grey;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <h2>DEMO APP</h2>
+            </div>
+            <ul class="nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">JOBS</a></li>
+                <li><a href="#">CLIENTS</a></li>
+                <li><a href="profile.html">EMPLOYERS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+       </header>
+        </div>
+         <div class="welcome-text">
+            <h1> i'am looking for.. </h1>
+         </div>
+         <div class="search-bar">
+            <input type="text" placeholder="Enter a Job Discription " name="search">
+         </div>
+         <div class="button">
+          <button>search</button>
+         </div>
+         <div class="checkbox">
+          <input type="checkbox">Full Time
+          <input type="checkbox">Part Time/casual/freelance
+         <input type="#" placeholder="select your location"><select name="select your location" id="#"><option value="#">Mumbai</option><option value="">dilhi</option><option value="">pune</option></select>
+          
+        
+         <div class="but">REGISTER</div>
+         </div>
+
+</body>
+</html>
